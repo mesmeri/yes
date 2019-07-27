@@ -633,14 +633,15 @@
 
 	<div class="sign-up__wrapper modal mfp-hide" id="freeLessonModal">
 		<div class="sign-up__inner">
-			<div class="modal-content">
+			<div class="note"></div>
+			<div class="modal-content fields">
 				<h2 class="sign-up__title">
 					Пробное занятие
 				</h2>
 				<p>
 					Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия
 				</p>
-				<form action="" class="form sign-up__form">
+				<form action="" class="form sign-up__form ajax-contact-form">
 					<input type="tel" id="tel"
 					name="tel" placeholder="+7 ( _ _ _ ) _ _ _-_ _ _-_ _ _ _" />
 					<input type="submit" class="offer__btn cta-btn" value="Записаться на пробное занятие"/>
@@ -651,17 +652,20 @@
 
 	<div class="sign-up__wrapper modal mfp-hide" id="callMeModal">
 		<div class="sign-up__inner">
-			<h2 class="sign-up__title">
-				Заказать звонок
-			</h2>
-			<p>
-				Оставьте свой номер телефона и наш оператор свяжется с вами для предоставления всей интересующей вас информации
-			</p>
-			<form action="" class="form sign-up__form" method="POST">
-				<input type="tel" id="tel"
-				name="tel" placeholder="+7 ( _ _ _ ) _ _ _-_ _ _-_ _ _ _" / required>
-				<input type="submit" class="offer__btn cta-btn" value="Жду звонка!"/>
-			</form>
+			<div class="note"></div>
+			<div class="modal-content fields">
+				<h2 class="sign-up__title">
+					Заказать звонок
+				</h2>
+				<p>
+					Оставьте свой номер телефона и наш оператор свяжется с вами для предоставления всей интересующей вас информации
+				</p>
+				<form action="" class="form sign-up__form ajax-contact-form" >
+					<input type="tel" id="tel"
+					name="tel" placeholder="+7 ( _ _ _ ) _ _ _-_ _ _-_ _ _ _" / required>
+					<input type="submit" class="offer__btn cta-btn" value="Жду звонка!"/>
+				</form>
+			</div>
 		</div>
 	</div>
 
@@ -677,7 +681,7 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="contactform.js"></script>
+	<script src="js/contactform.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

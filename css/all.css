@@ -103,6 +103,11 @@
 .mfp-s-error .mfp-content {
   display: none; }
 
+.note-msg {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
@@ -1345,7 +1350,7 @@ input:focus {
   border-radius: 50%;
   background-color: #2429ff;
   position: absolute;
-  right: -7%;
+  right: -4%;
   top: 10%; }
 
 .trial-offer__title {
@@ -1491,7 +1496,7 @@ address.tablet-visible {
   display: block;
   position: absolute;
   left: 50%;
-  top: 50%; }
+  top: 0; }
 
 .mfp-close::before {
   transform: rotate(-35deg); }
@@ -1502,6 +1507,13 @@ address.tablet-visible {
 .mfp-close:active {
   transform: translateY(-5px);
   top: 25px; }
+/*.note {
+  display: none;
+}*/
+.note-msg {
+  font-size: 2rem;
+  font-weight: 600;
+}
 
 @media (max-width: 1200px) {
   .logo {

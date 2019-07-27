@@ -36,20 +36,14 @@ $(function() {
 
   $('.open-popup-link').magnificPopup();
 
+  // $('.mfp-close').on('click', function () {
+  // 	alert(1);
+  // 	$('.note').css('display', 'none');
+  // 	$('.fields').show();
+  // })
+
+
+
 /* ------------------ Form Submit ------------------ */
 
-$('.sign-up__form').submit(function () {
-	var th = $(this);
-	$.ajax({
-		type: 'POST',
-		url: '/send.php',
-		data: th.serialize()
-	}).done(function () {
-		$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
-		setTimeout(function() {
-			$(th).find('.success').removeClass('active').fadeOut();
-			th.trigger('reset'), 3000
-		})
-	})
-})
 })
